@@ -1,0 +1,162 @@
+//主页特有的样式
+@import "zcm.less"; 
+
+//头部
+header{
+    .bcf;
+    color: #fff;.h(94);
+    display: flex;justify-content: space-between;align-content: center;align-items:center;
+    background:#fa3443;
+    .logoh1{.fs(30);}
+    .logoa{color: #fff;}
+    .logo{display: flex;align-items:center;.ml(19);}
+    .logoright{.fs(30);.mr(31);}
+}
+//导航
+.topmenu{
+    .bcf;
+    display: flex;justify-content: space-around;align-items: center;
+    .fs(24);.h(86); 
+    .page{color: #Ff3636;}
+}
+
+
+//轮播
+.swipe {
+    .bcf;
+    .sliderimg{width: 100%;}
+        overflow: hidden;
+        visibility: hidden;
+        position: relative;
+    .swipe-wrap {
+        overflow: hidden;
+        position: relative;
+    }
+    .swipe-wrap > div {
+        float:left;
+        width:100%;
+        position: relative;
+    }
+    
+    .swipe img{ /*让图片100%*/
+        width: 100%;  
+    }
+    
+    .indirector{
+        position: absolute;
+        bottom:20px;
+        left:50%;transform: translateX(-50%);
+    }
+    .indirector span{
+        display: inline-block;margin: 3px;
+        width: 10px;height: 10px;border-radius: 50%;
+        background-color: #fff;
+    }
+    .indirector span.on{
+        background-color: red;
+    }
+}
+
+.usernav{
+    .bcf;
+    display: flex;justify-content: space-around;.h(200);.pt(34);text-align: center;
+    border-bottom: 1px solid #ddd;  
+    .item{border-radius:30%;}
+    .iconfont{
+        .h(90);
+        .w(90);
+        text-align: center;.lh(90);display: block;border-radius: 40%;.fs(40);
+    }
+    .item1{background: #4099E9;}
+    .item2{background: #FB6361;}
+    .item3{background: #40C8B0;}
+    .item4{background: #FFAE28;}
+    .itemp{.fs(20);.mt(10);}
+}
+//热门商品
+.hotgoods{
+    .goods{      
+        .h(95);.pl(24);.pr(38);.fs(30);background: #F9F9F9;
+        display: flex;align-content: center;align-items: center;justify-content: space-between;
+        .hotimg{.w(46);.h(46);}
+        .goodsh1{.fs(30);color: #494848;}
+        .goods-item{display: flex;align-items: center;}
+        .more{color: #9a9b9c;}
+    }
+    .itemlist{
+        .mt(24);.ml(25);.mr(22);
+        .item{.mb(25);.h(255);.bcf;.pl(26);.pr(26);border: 1px solid #ddd;}
+        .item-box{
+            display: flex;justify-content: space-between;align-items: center;.pt(25);
+            .box-h2{.fs(28);}
+            .item-span{
+                display: flex;.fs(20);
+                .back{background: #FFAB37;.lh(30);;.w(80);.h(30);text-align: center;border-radius: 10%;}
+                .iconfont{.w(35);.h(30);.fs(20);color: #fff;background: #ff7404;border-radius: 10%;text-align: center;.lh(30);.ml(5);}
+            }
+        }
+        .data{
+            .mt(28);
+            display: flex;justify-content: space-between;
+            .itemimg{.wh(140);}
+            .item1{
+                display: flex;.mt(60);
+                .benefit1{.fs(38);color: #fb4034;}
+                .benefit2{.fs(24);color: #ff7900;}
+                
+            }
+            .item2{
+                display: flex;flex-direction: column;.mt(34);
+                .time1{.fs(30);color: #3d3c3c;}
+                .time2{.fs(30);color: #9a9b9c;}              
+            }
+            .item3{
+                .mt(28);
+            }
+        }
+    }
+}
+
+//企业动态
+.news{
+    .mb(23);.h(574);
+    .list{background: #fff;border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;}
+    .title{
+        display: flex;align-items:center ;.h(94);
+        .iconfont{.fs(35);.mr(20);color: #FF0000;}
+        .trends{
+            .fs(28);.ml(20);align-content: center;display: flex;
+        }
+    }        
+    .itemlast{.pb(35);}
+    .item{
+        .pl(24);.pt(35);.pr(25);.bcf;
+        display: flex;       
+        .itemimg{.wh(110);border-radius: 30%;flex: 0 0 auto;}
+        .item-box{
+            flex: 1 1 auto;
+            .ml(23);display: flex;flex-direction: column;
+            .box-h3{display: flex;flex: 1 1 auto;.fs(20);align-items: center;color:#494848;}
+            .box-p{
+                display: flex;flex: 1 1 auto;color: #9a9b9c;
+                .fs(20);align-items: center;justify-content: space-between;
+            }
+        }  
+    }
+}
+
+//底部   
+footer{
+    border-top: 1px solid #ddd;
+    .h(165);.bcf;
+    .item{
+        .pt(45);
+        .style{
+            display: flex;justify-content: center;.fs(28);color: #494848;
+        }    
+        .copy{
+            display: flex;justify-content: center;.fs(26);.pt(24);color: #9a9b9c;
+        } 
+    }
+    
+}

@@ -1,0 +1,540 @@
+.w890 {
+  width: 890px;
+}
+.w100 {
+  width: 100%;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.xc {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.yc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pa {
+  position: absolute;
+}
+.pr {
+  position: relative;
+}
+.br {
+  border-radius: 50%;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.bcf {
+  background-color: #fff;
+}
+.ti {
+  text-indent: -9999px;
+}
+.cfff {
+  color: #fff;
+}
+.red {
+  color: red;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb35 {
+  margin-bottom: 35px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.bt1ddd {
+  border-top: 1px solid #ddd;
+}
+.bln {
+  border-left: none;
+}
+.brn {
+  border-right: none;
+}
+.btn {
+  border-top: none;
+}
+.bbn {
+  border-bottom: none;
+}
+.df {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.aic {
+  align-items: center;
+}
+.flex-ccsb {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.cf {
+  color: #fff;
+}
+.ma {
+  margin: auto;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+div,
+input,
+button,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/1.2 "微软雅黑", "SimSun", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {
+  color: #666;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+html {
+  font-size: 100px;
+}
+body {
+  background: #f9f9f9;
+}
+header {
+  background-color: #fff;
+  color: #fff;
+  height: 0.94rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background: #fa3443;
+}
+header .logoh1 {
+  font-size: 0.3rem;
+}
+header .logoa {
+  color: #fff;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0.19rem;
+}
+header .logoright {
+  font-size: 0.3rem;
+  margin-right: 0.31rem;
+}
+.topmenu {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.24rem;
+  height: 0.86rem;
+}
+.topmenu .page {
+  color: #Ff3636;
+}
+.swipe {
+  background-color: #fff;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe .sliderimg {
+  width: 100%;
+}
+.swipe .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe .swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe .swipe img {
+  /*让图片100%*/
+  width: 100%;
+}
+.swipe .indirector {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swipe .indirector span {
+  display: inline-block;
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.swipe .indirector span.on {
+  background-color: red;
+}
+.usernav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: 2rem;
+  padding-top: 0.34rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.usernav .item {
+  border-radius: 30%;
+}
+.usernav .iconfont {
+  height: 0.9rem;
+  width: 0.9rem;
+  text-align: center;
+  line-height: 0.9rem;
+  display: block;
+  border-radius: 40%;
+  font-size: 0.4rem;
+}
+.usernav .item1 {
+  background: #4099E9;
+}
+.usernav .item2 {
+  background: #FB6361;
+}
+.usernav .item3 {
+  background: #40C8B0;
+}
+.usernav .item4 {
+  background: #FFAE28;
+}
+.usernav .itemp {
+  font-size: 0.2rem;
+  margin-top: 0.1rem;
+}
+.hotgoods .goods {
+  height: 0.95rem;
+  padding-left: 0.24rem;
+  padding-right: 0.38rem;
+  font-size: 0.3rem;
+  background: #F9F9F9;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotgoods .goods .hotimg {
+  width: 0.46rem;
+  height: 0.46rem;
+}
+.hotgoods .goods .goodsh1 {
+  font-size: 0.3rem;
+  color: #494848;
+}
+.hotgoods .goods .goods-item {
+  display: flex;
+  align-items: center;
+}
+.hotgoods .goods .more {
+  color: #9a9b9c;
+}
+.hotgoods .itemlist {
+  margin-top: 0.24rem;
+  margin-left: 0.25rem;
+  margin-right: 0.22rem;
+}
+.hotgoods .itemlist .item {
+  margin-bottom: 0.25rem;
+  height: 2.55rem;
+  background-color: #fff;
+  padding-left: 0.26rem;
+  padding-right: 0.26rem;
+  border: 1px solid #ddd;
+}
+.hotgoods .itemlist .item-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.25rem;
+}
+.hotgoods .itemlist .item-box .box-h2 {
+  font-size: 0.28rem;
+}
+.hotgoods .itemlist .item-box .item-span {
+  display: flex;
+  font-size: 0.2rem;
+}
+.hotgoods .itemlist .item-box .item-span .back {
+  background: #FFAB37;
+  line-height: 0.3rem;
+  width: 0.8rem;
+  height: 0.3rem;
+  text-align: center;
+  border-radius: 10%;
+}
+.hotgoods .itemlist .item-box .item-span .iconfont {
+  width: 0.35rem;
+  height: 0.3rem;
+  font-size: 0.2rem;
+  color: #fff;
+  background: #ff7404;
+  border-radius: 10%;
+  text-align: center;
+  line-height: 0.3rem;
+  margin-left: 0.05rem;
+}
+.hotgoods .itemlist .data {
+  margin-top: 0.28rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hotgoods .itemlist .data .itemimg {
+  width: 140;
+  height: 140;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.hotgoods .itemlist .data .item1 {
+  display: flex;
+  margin-top: 0.6rem;
+}
+.hotgoods .itemlist .data .item1 .benefit1 {
+  font-size: 0.38rem;
+  color: #fb4034;
+}
+.hotgoods .itemlist .data .item1 .benefit2 {
+  font-size: 0.24rem;
+  color: #ff7900;
+}
+.hotgoods .itemlist .data .item2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.34rem;
+}
+.hotgoods .itemlist .data .item2 .time1 {
+  font-size: 0.3rem;
+  color: #3d3c3c;
+}
+.hotgoods .itemlist .data .item2 .time2 {
+  font-size: 0.3rem;
+  color: #9a9b9c;
+}
+.hotgoods .itemlist .data .item3 {
+  margin-top: 0.28rem;
+}
+.news {
+  margin-bottom: 0.23rem;
+  height: 5.74rem;
+}
+.news .list {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.news .title {
+  display: flex;
+  align-items: center ;
+  height: 0.94rem;
+}
+.news .title .iconfont {
+  font-size: 0.35rem;
+  margin-right: 0.2rem;
+  color: #FF0000;
+}
+.news .title .trends {
+  font-size: 0.28rem;
+  margin-left: 0.2rem;
+  align-content: center;
+  display: flex;
+}
+.news .itemlast {
+  padding-bottom: 0.35rem;
+}
+.news .item {
+  padding-left: 0.24rem;
+  padding-top: 0.35rem;
+  padding-right: 0.25rem;
+  background-color: #fff;
+  display: flex;
+}
+.news .item .itemimg {
+  width: 110;
+  height: 110;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 30%;
+  flex: 0 0 auto;
+}
+.news .item .item-box {
+  flex: 1 1 auto;
+  margin-left: 0.23rem;
+  display: flex;
+  flex-direction: column;
+}
+.news .item .item-box .box-h3 {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 0.2rem;
+  align-items: center;
+  color: #494848;
+}
+.news .item .item-box .box-p {
+  display: flex;
+  flex: 1 1 auto;
+  color: #9a9b9c;
+  font-size: 0.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  border-top: 1px solid #ddd;
+  height: 1.65rem;
+  background-color: #fff;
+}
+footer .item {
+  padding-top: 0.45rem;
+}
+footer .item .style {
+  display: flex;
+  justify-content: center;
+  font-size: 0.28rem;
+  color: #494848;
+}
+footer .item .copy {
+  display: flex;
+  justify-content: center;
+  font-size: 0.26rem;
+  padding-top: 0.24rem;
+  color: #9a9b9c;
+}

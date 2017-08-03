@@ -1,0 +1,84 @@
+@import "zcm.less";
+//头部
+header{
+    .df;.jcsb;.aic;.fs(28);background: #FA3443;.h(92);color: #fff;
+    .icon-fanhui{.pl(30);.fs(28);.cf;}
+    .icon-caidan{.pr(38);.fs(28);}
+}
+//投资收益
+.gain{   
+    .df;flex-direction: column;.tc;.h(222);.cf;background: linear-gradient(to bottom, #ff3c01, #d80607);
+    .gain1{.fs(68);.pt(50);}
+    .gain2{.fs(30);.pt(42);} 
+}
+//投资条件
+.invest{
+    .bcf;.h(413); 
+    .item{
+        .df;.h(79);.aic;background: #f1f0f0;border-bottom: 1px solid #ddd;.mb(68);
+        .info{width: 50%;.tc;.fs(30);color: #777;border-right: 1px solid #ccc;}
+        .last{.brn;}       
+    }
+    .expository{
+        .df;.aic;flex-wrap: wrap;.jcc;background: url(../img/detail_icon_bg.png) no-repeat;.ma;
+        .w(640);.h(203);
+        .info{           
+            .iconfont{.wh(55);.br(50%);border: 2px solid #F5F5F5;.mr(13);.fs(35);.tc;.df;.jcc;.aic;}
+            width: 50%;.tc;.fs(24);color: #ffc166;.df;.jcc;.aic;
+        }
+    }
+    
+}
+//滚动条
+.warp{
+    .w(660);.h(15);background: #F0F0F0;margin: auto;.br(25px);transition: all 2s ease;
+    .bars{
+//      .w(341);
+        .w(0);        
+        .h(15);background: #fb0502;.br(25px);.pr;transition: all 2s ease;
+        .cursor{
+            .pa;.t(-50);transition: all 2s ease;
+//          .l(311);
+            .l(0);
+            .number{.fs(28);.w(80);.h(32);.cf;background:#fb0502;.br(6px);text-align: center;line-height: 0.32rem;}
+            .trigon{.triangle-b(0.08rem,#fb0502);.pa;.t(40);.l(20);}
+        }
+    }
+}
+//投资人
+.people{
+    .df;.jcsb;.fs(22);.pt(25);
+    .infoi{color: #FF0000;}
+    .info{color: #808080;}
+    .info1{.pl(43);}
+    .info2{.pr(43);}
+}
+//项目查询
+.null{
+    .h(373);.df;.jcc;align-items: flex-end;.pr;
+    .look{.df;.fs(22);color: #808080;position: fixed;.pa;.b(141);left: 50%;transform: translateX(-50%);}   
+} 
+
+//底部
+footer{
+    .df;.jcsb;background: #e0e0e0;.fs(32);.h(105);.aic;width:100%;bottom: 0;position: fixed;
+    .earnings{        
+        color: #f90;.pl(36);.pr(51);
+        .earnings-i{border-bottom: 2px solid #f90;}
+    }
+    .go{.h(82);.w(517);background: #FA3443;.cf;.df;.aic;.jcc;.br(10px);.mr(14);}
+    
+}
+
+.mask{
+    display: none;
+    .pa;.t(92);.b(105);left: 0;right: 0;background: rgba(0,0,0,0.5);
+    .nav{
+        .bcf;.h(51);.df;width: 100%;.aic;
+        .item{
+            width: 25%;.tc;
+            border-right:1px solid  #FA3443;color:#FA3443;
+        }
+        .lastitem{.brn;}
+    }  
+}

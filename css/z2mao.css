@@ -1,0 +1,110 @@
+.w890 {
+  width: 890px;
+}
+.w100 {
+  width: 100%;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.xc {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.yc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pa {
+  position: absolute;
+}
+.pr {
+  position: relative;
+}
+.br {
+  border-radius: 50%;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.bcf {
+  background-color: #fff;
+}
+.ti {
+  text-indent: -9999px;
+}
+.cfff {
+  color: #fff;
+}
+.red {
+  color: red;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb35 {
+  margin-bottom: 35px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.bt1ddd {
+  border-top: 1px solid #ddd;
+}
+.bln {
+  border-left: none;
+}
+.brn {
+  border-right: none;
+}
+.btn {
+  border-top: none;
+}
+.bbn {
+  border-bottom: none;
+}
+.df {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.aic {
+  align-items: center;
+}
+.flex-ccsb {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.cf {
+  color: #fff;
+}
+.ma {
+  margin: auto;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<script type="text/javascript">
+			var fs = document.documentElement.clientWidth/750*100;
+			document.querySelector('html').style.fontSize = fs+'px';			
+		</script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a class="return" href="index.html"><i class="iconfont icon-fanhui"></i></a>
+			<p>盈信计划2467号1期</p>
+			<i class="iconfont icon-caidan menu"></i>
+		</header>
+		<!--投资收益-->
+		<div class="gain">
+			<span class="gain1">9.2%+0.5%</span>
+			<span class="gain2">9.7%&nbsp;(9.2%+活动加息0.5%)</span>
+		</div>
+		<!--投资条件-->
+		<div class="invest">
+			<div class="item">
+				<p class="info">1000元起投</p>
+				<p class="info last">期限180天</p>
+			</div>
+			<div class="expository">
+				<span class="info">
+					<i class="iconfont icon-xinshouzhiyin"></i>
+					<p>省级律所法律支持</p>
+				</span>
+				<span class="info">
+					<i class="iconfont icon-xinshouzhiyin"></i>
+					<p>浙大友创战略入股</p>
+				</span>
+				<span class="info">
+					<i class="iconfont icon-xinshouzhiyin"></i>
+					<p>招财猫易贷严风控</p>
+				</span>
+				<span class="info">
+					<i class="iconfont icon-xinshouzhiyin"></i>
+					<p>千万级风险保障金</p>
+				</span>
+				
+			</div>
+		</div>
+		<!--滚动条-->
+		<!--最外层-->
+		<div class="warp" data-value="100">
+			<!--滚动条-->
+			<div class="bars">
+				<!--指示器-->
+				<span class="cursor">
+					<p class="number">0%</p>
+					<i class="trigon"></i>
+				</span>
+			</div>			
+		</div>
+		<!--投资人数-->
+		<div class="people">
+			<p class="info1 info">已投资<i class="infoi">57</i>人</p>
+			<p class="info2 info">剩余可投<i class="infoi">0</i>元</p>
+		</div>
+		<!--项目详情-->
+		<div class="null">
+			<a href=""><p class="look">查看项目详情></p></a>
+		</div>
+		
+		<!--底部-->	
+		<footer>
+			<a href="" class="earnings"><i class="earnings-i">收益估算</i></a>
+			<a href="" class="go">立即投资</a>
+		</footer>
+		
+		<!--遮罩层-->
+		<div class="mask">			
+			<div class="nav">
+				<a href="index.html" class="item">
+					<i class="iconfont icon-zhuye"></i>  
+					<span>主页</span>  
+				</span>
+				<a href="" class="item">
+					<i class="iconfont icon-suo"></i>  
+					<span>安全保障</span>  
+				</a>
+				<a href="" class="item">
+					<i class="iconfont icon-touzi"></i>  
+					<span>我要投资</span>  
+				</a>
+				<a href="" class="item lastitem">
+					<i class="iconfont icon-jiaruwomen"></i>  
+					<span>帐户中心</span>  
+				</a>
+			</div>			
+		</div>
+		
+		<script src="zepto-master/src/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto-master/src/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto-master/src/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			window.requestAnimFrame = (function(){
+				  return  window.requestAnimationFrame       ||
+				          window.webkitRequestAnimationFrame ||
+				          window.mozRequestAnimationFrame    ||
+				          function( callback ){
+				            window.setTimeout(callback, 1000 / 60);
+				          };
+			})();
+			
+			window.cancelrequestAnimFrame = (function(){
+				  return  window.cancelAnimationFrame   ||
+				          window.webkitCancelAnimationFrame ||
+				          window.mozCancelAnimationFrame    ||
+				          window.clearTimeout;				          
+			})();
+			
+			
+			$(function(){
+				var value = $('.warp').attr('data-value');				
+				var currentValue = 0;   //指示器的初始值
+				var setp = value/50;	
+//				步长
+				var timer=0;
+//				console.log(setp);
+	//			console.log(value);
+				var warpWidth = $('.warp').width();
+				var barsWidth = warpWidth * value/100; 
+//				console.log(warpWidth,barsWidth);	
+				
+				$('.bars').css("width",barsWidth);
+				$('.cursor').css("left",barsWidth - $('.cursor').width()/2);
+				
+				function addNumber(){
+					currentValue = currentValue + setp;
+					currentValue = parseInt(currentValue);					
+//					currentValue = +currentValue.toFixed(2);
+//					console.log(currentValue);
+					currentValue = currentValue > value ? value : currentValue;					
+					timer = requestAnimationFrame(function(){
+						addNumber();
+					});
+					
+					if(currentValue >= value){
+						cancelAnimationFrame(timer);
+					}
+					$('.number').html( currentValue + '%');	
+					console.log(currentValue);
+				}
+				addNumber();
+			})
+			
+			$('.menu').click(function(){
+				$('.mask').toggle();
+			})
+		
+		</script>
+	</body>
+</html>
