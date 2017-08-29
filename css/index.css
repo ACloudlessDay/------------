@@ -419,12 +419,6 @@ header .logoright {
   display: flex;
   justify-content: space-between;
 }
-.hotgoods .itemlist .data .itemimg {
-  width: 140;
-  height: 140;
-  width: 1.4rem;
-  height: 1.4rem;
-}
 .hotgoods .itemlist .data .item1 {
   display: flex;
   margin-top: 0.6rem;
@@ -450,8 +444,9 @@ header .logoright {
   font-size: 0.3rem;
   color: #9a9b9c;
 }
-.hotgoods .itemlist .data .item3 {
-  margin-top: 0.28rem;
+.hotgoods .itemlist .data .item-3 {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 .news {
   margin-bottom: 0.23rem;

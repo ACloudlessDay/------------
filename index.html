@@ -96,8 +96,8 @@
 								<p class="time2"><strong class="time1">180</strong>天</p>
 								<span class="time2">投资期限</span>
 							</div>
-							<div class="item-3">
-								<img class="itemimg" src="img/data3.png"/>
+							<div class="item-3" data-number="40">
+
 							</div>
 						</div>
 					</a>
@@ -121,8 +121,8 @@
 								<p class="time2"><strong class="time1">365</strong>天</p>
 								<span class="time2">投资期限</span>
 							</div>
-							<div class="item-3">
-								<img  class="itemimg" src="img/data3.png"/>
+							<div class="item-3" data-number="80">
+
 							</div>
 						</div>
 					</a>
@@ -146,8 +146,8 @@
 								<p class="time2"><strong class="time1">300</strong>天</p>
 								<span class="time2">投资期限</span>
 							</div>
-							<div class="item-3">
-								<img  class="itemimg" src="img/data3.png"/>
+							<div class="item-3" data-number="60">
+
 							</div>
 						</div>
 					</a>	
@@ -212,6 +212,9 @@
 			</div>
 
 		</footer>
+		
+
+		<script src="js/Circle.js" type="text/javascript" charset="utf-8"></script>
 		<script src="zepto-master/src/zepto.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="zepto-master/src/event.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
@@ -239,6 +242,34 @@
 				var index = $(this).index();
 				mySwipe.slide(index, 2000)
 			});
+
+
+//			var c1 = new Circle(".circle1",{
+//				maxX:88,			    //默认的百分比的进度 88%
+//				frontColor:"#ff0000",   // 前景色 默认是红色 
+//				backgroundColor:"#999", // 背景色 默认是红色
+//				fontsize:20,			//默认字的大小
+//				startDirection:"right",  //从3点方向开始，顺时针
+//				linewidth:10,			//线条的粗细
+//			});
+			$(function(){
+			
+				$(".item-3").each(function(index,ele){				
+					new Circle(
+						ele,{
+							linewidth:2,maxX: ele.getAttribute("data-number") }
+						);
+					console.info(index,ele)
+					
+				})
+				
+				
+	//			new Circle(".item-1",{
+	//			maxX:40,			    //默认的百分比的进度 88%
+	//			fontsize:16,			//默认字的大小
+	//			linewidth:2,			//线条的粗细
+	//		});
+		});
 		</script>
 	</body>
 </html>
